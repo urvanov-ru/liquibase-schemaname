@@ -12,7 +12,7 @@ return extract(databaseMetaData.getTables(catalog, schema, ((table == null) ?
 SQL_FILTER_MATCH_ALL : table), new String[]{"TABLE"}));
 ```
 
-The code above returns two rows and liquibase select the first one. But the first
+The code above returns two rows and liquibase selects the first one. But the first
 row is only for test-schema, not for test_schema. 
 
 Liquibase uses java.sql.DatabaseMetadata#getTables. The method accepts schemaPattern
